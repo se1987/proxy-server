@@ -9,7 +9,7 @@
                 },
                 {
                     "key": "Access-Control-Allow-Origin",
-                    "value": "https://storied-kitten-b2870e.netlify.app/"
+                    "value": "*"
                 },
                 {
                     "key": "Access-Control-Allow-Methods",
