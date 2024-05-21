@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.use("/weather-data", (req, res, next) => {
     const city = url.parse(req.url).query
     createProxyMiddleware({
-        target: `${process.env.BASE_API_URL_WEATHERAPI}${city}&aqi=no`,
+        target: `${process.env.BASE_API_URL_WORLD_WEATHER}${city}&aqi=no`,
         changeOrigin: true,
         pathRewrite: {
             [`^"/weather-data`]: "",
